@@ -1,0 +1,21 @@
+public class areacalc
+{
+    double Area(double l, double b)
+    {
+        return(l * b);
+    }
+    double Area(double a)
+    {
+        return(a * a);
+    }
+      
+    public static void main(String[] args) 
+    {
+        areacalc v=new areacalc();
+        double n=v.Area(12,3.1);
+        System.out.println("Area of Rectangle is " + n);
+        
+        double k=v.Area(4.2);
+        System.out.println("Area of Rectangle is " + k);
+    }
+}
