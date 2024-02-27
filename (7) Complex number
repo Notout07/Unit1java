@@ -1,0 +1,58 @@
+class complex
+{
+    int real,image;
+    complex()
+    {}
+    complex(int real1,int image1)
+    {
+        real=real1;
+        image=image1;
+    }
+
+    static complex add(complex c1,complex  c2)
+   {
+     
+      complex c= new complex();
+      c.real=c1.real+c2.real;
+      c.image=c1.image + c2.image;
+      return c;
+   }
+
+   static complex sub(complex c1,complex  c2)
+   {
+     
+      complex c= new complex();
+      c.real=c1.real-c2.real;
+      c.image=c1.image - c2.image;
+      return c;
+   }
+
+   static complex mul(complex c1,complex  c2)
+   {
+     
+      complex c= new complex();
+      c.real=c1.real*c2.real;
+      c.image=c1.image * c2.image;
+      return c;
+   }
+
+ 
+   public static void main(String args[])
+   {
+      complex c1=new complex(1,2);
+      complex c2=new complex(3,4);
+
+      complex sum=new complex();
+      complex difference=new complex();
+      complex multiply=new complex();
+
+      sum=add(c1,c2);
+      difference=sub(c1,c2);
+      multiply=mul(c1,c2);
+
+
+      System.out.println("Addition="+sum.real+" "+"+"+" "+sum.image+"i");
+      System.out.println("Subtraction="+difference.real+" "+"+"+" "+difference.image+"i");
+      System.out.println("Multiplication="+multiply.real+" "+"+"+" "+multiply.image+"i");
+   }
+}  
