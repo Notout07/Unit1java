@@ -1,0 +1,22 @@
+import java.util.*;
+public class simpleinterest2
+{
+    public static void main(String args[])
+    {
+        int p, r, n, i;
+        System.out.print(" Enter Principle Amount : ");
+        Scanner s1 = new Scanner(System.in);
+        p = s1.nextInt();
+
+        System.out.print(" Enter Rate Of Interest : ");
+        s1 = new Scanner(System.in);
+        r = s1.nextInt();
+
+        System.out.print(" Enter No. of Installments : ");
+        s1 = new Scanner(System.in);
+        n = s1.nextInt();
+
+        i = (p * r * n) / 100;
+        System.out.println(" Simple Interest is " +i);
+    }
+}
